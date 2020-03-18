@@ -1,0 +1,14 @@
+﻿
+.dark-theme {
+	background-color: black;
+	color: white;
+}
+
+.dark {
+	border: 1px solid #fff;
+}
+
+.theme-button {
+	background-color: darkcyan;
+	color: #fff;
+}

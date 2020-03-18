@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tetris</title>
+    <link rel='stylesheet' href='css/tetris.css'>
+    <link rel='stylesheet' href='css/canvas.css'>
+    <link rel='stylesheet' href='css/buttons.css'>
+    <link rel='stylesheet' href='css/themes.css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body class="page">
+    <div id="tetris">
+      <div id="tetrisleft">
+        <canvas id="tetriscanvas" width="300" height="600" class="canvas"></canvas>
+        <audio id="clearsound" src="sound/pop.ogg" preload="auto"></audio>
+        <audio src="sound/music.mp3" autoplay loop></audio>
+      </div>
+      <div id="tetrisright">
+        <div align="center">
+          <h1>TETЯIS</h1>
+          <p class="info">
+            &harr; or A-D: move left/right;
+            <br>&uarr; or W: rotate;
+            <br>&darr; or _: drop;
+            <br>Esc: pause
+          </p>
+        </div>
+        <canvas id="figurecanvas" width="120" height="120"></canvas>
+        <p class="info" id="tetriscount"></p>
+        <button onclick="document.location.reload();" class="reset"><i class="material-icons">replay</i></button><br><br>
+        <button onclick="window.alert ('paused');" class="pause"><i class="material-icons">pause_circle_outline</i></button><br><br>
+        <button class="theme-button" type="button" title="Изменить тему"><i class="material-icons">loop</i> / Переключить тему</button>
+      </div>
+      <div class="clear"></div>
+    </div>
+		<script src = 'js/level.js'></script>
+    <script src = 'js/game.js'></script>
+    <script src = 'js/controller.js'></script>
+    <script src = 'js/canvas.js'></script>
+    <script src = 'js/theme.js'></script>
+  </body>
+</html>
